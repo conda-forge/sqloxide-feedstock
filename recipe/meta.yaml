@@ -1,5 +1,5 @@
 {% set name = "sqloxide" %}
-{% set version = "0.1.15" %}
+{% set version = "0.1.17" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/wseaton/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 5e46a472305d5a5ad1645ff930dc7d8da92563ea5804622c16d11db85f54d4f9
+  sha256: b2e8a427111df050e4c63cffc94ff4f85e31783a7055e3186ec035f189c7889b
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   build:
@@ -37,7 +37,7 @@ test:
 
 about:
   home: https://github.com/wseaton/{{ name }}
-  summary: 'Python bindings for sqlparser-rs'
+  summary: Python bindings for sqlparser-rs
   description: |
     The original goal of this project was to have a very fast, efficient, and accurate 
     SQL parser I could use for building data lineage graphs across large code bases 
