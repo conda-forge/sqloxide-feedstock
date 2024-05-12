@@ -1,5 +1,5 @@
 {% set name = "sqloxide" %}
-{% set version = "0.1.18" %}
+{% set version = "0.1.43" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/wseaton/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 7b7fe7ffa1de10652d42323911c0683442ad114a23877859876eb44bcddabdf6
+  sha256: b47a6e74331c6760db66a37b8051cad36d1a1327dc70e9396629806fd09fc1e4
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   build:
